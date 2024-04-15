@@ -52,24 +52,24 @@ Application link: https://reel-radar.onrender.com/
 
 Once inside the webpage, the User can create and account, or if they already have an account, they can login. 
 
-![Image of the top of the homepage](public\images\homepage.JPG)
+![Image of the top of the homepage](./public/images/homepage.JPG)
 
 The main functionality of our webpage is writing a review which can be accessed by clicking the "write a review" button, where the user will be brought to a new page where they can select a movie, and write a review about it. 
 
-![image of the write a review page](public\images\writeeview.JPG)
+![image of the write a review page](./public/images/writeeview.JPG)
 
 Once submitted The review will appear on the homepage, profile, and search results. 
 
-![image of the reviews on the homepage](public\images\reviews.JPG)
+![image of the reviews on the homepage](./public/images/reviews.JPG)
 
 If clicking the profile button in the top right, the user will be taken to their individual profile, where they can edit a list of their favorite movies, and watch-list movies. Additionally, the user can edit their personal information, and reviews. 
 
-![image of the profile page](public\images\profile.JPG)
+![image of the profile page](./public/images/profile.JPG)
 
 Clicking the home button in the top right, takes the user back to the homepage. At the bottom of the homepage the user can search for movies, or users. 
 The searched movie page will show the poster and name of the searched movie, and any associated reviews.
 
-![image of the searched movie page](public\images\searchedmovie.JPG)
+![image of the searched movie page](./public/images/searchedmovie.JPG)
 
 The search user page will show a users profile sans their personal information and has no options to edit
 
