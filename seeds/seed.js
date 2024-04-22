@@ -227,40 +227,26 @@ const userWatchListSeeds = [
 ]
 const reviewSeeds = [
   {
-    title: "La La Land: The Magic of Music and Cinema Collide",
-    content: "La La Land is a great take on the musical/romance genre. I went into this movie as a 16 year old and was completely taken aback by how much I enjoyed the music and by how much the movie affected me. If musicals aren't your thing I'd still heavily recommend watching this for the great chemistry between Ryan Gosling and Emma stone as well as the breathtaking score.",
+    title: "This is not a movie review site its a tech blog site!",
+    content: "I love writing blogs about tech!",
     rating: 5,
     user_id: 4,
     movie_id: 313369
   },
   {
-    title: "Avatar: Where CGI Animals Have More Personality Than Some Real People",
-    content: "Great Movie overall! It has a soft spot in my heat since I was a child and the world building was what left the strongest impact on me when I first watched. Along with the cool creatures and acting made it one of my favorite movies of all time.",
+    title: "A guide to changing your movie review site to a tech blog site",
+    content: "They are the same thing just delete a bunch of exta code and change review to blog",
     rating: 5,
     user_id: 3,
     movie_id: 19995 
   },
   {
-    title: "War For The Planet of the Kongs",
-    content: "First and foremost, WarnerBrothers Monstervers gets better with each movie, from 2016s Godzilla to this movie, I see nothing but immense progress, and acknowledgement for what the fans desire. So what is it the fans desire? giant monkeys, giant liards, and destruction! Godzilla X Kong delivers tenfold on the monsters and action, while still fitting in some human narrative. Speaking of the human narrative, it serves only to get the movie from one big cgi fight, to the next, and thats exactly what the human narrative should do! My only complaint after wathcing is it should have been called Kong x Godzilla: A New Empire, and anyone that watches the move would understand why.",
+    title: "Tech blog and movie review are the same thing",
+    content: "Stupid that i have to do this twice",
     rating: 4,
     user_id: 1,
     movie_id: 823464
-  },
-  {
-    title: "Denis has Dune it again!",
-    content: "This movie is literally the Lisan al Gaib of movies! Denis is able to deliver his usual stunning cinematography with the majority of the movie being in a desert! Maybe George Lucas saw Dune: Part 2 he directed A New Hope he could have taken many pointers from Denis. Everything from the acting to the visals is top-quality. It's hard to believe that this movie has a smaller budget that the average marvel movie and, by my standards, is better than any Marvel movie wishes it could be. Overall Dune: Part 2 is going into my list of all-time favorites.  ",
-    rating: 5,
-    user_id: 1,
-    movie_id: 693134
-  },
-  {
-    title: "In Space, No One Can Hear You Laugh: A Galaxy Quest Review",
-    content: "An epic cast of 90's all stars, this movie brings loads of action, adventure, and comedy together in this fun, family-friendly movie. Galaxy Quest has become a cult classic and is referred to as one of the greatest Star Trek movies of all time for good reason. Never give up, never surrender!",
-    rating: 5,
-    user_id: 2,
-    movie_id: 926
-  },
+  }
 ];
 
 const seedme = async () => {

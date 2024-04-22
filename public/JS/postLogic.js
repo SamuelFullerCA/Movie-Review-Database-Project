@@ -1,8 +1,8 @@
 // Variables used in multiple functions inatialised outside
-let movie_name;
-let movieid;
-let movie_poster;
-let movie_date;
+let movie_name = "string"
+let movieid = 123
+let movie_poster = "string"
+let movie_date = "string"
 let pulledArray = []
 
 // Function to post a review
@@ -10,11 +10,11 @@ async function newReview(event) {
   event.preventDefault();
 
   // Checks if a movie has been selected to review
-  if (movie_selected === false) {
-    document.querySelector('.titleName').textContent = '*select a movie to review'
-    document.querySelector('.titleName').setAttribute('class', 'text-danger titleName')
-    return
-  }
+  // if (movie_selected === false) {
+  //   document.querySelector('.titleName').textContent = '*select a movie to review'
+  //   document.querySelector('.titleName').setAttribute('class', 'text-danger titleName')
+  //   return
+  // }
   event.preventDefault();
 
   // POST request to add the movie that is being reviewed

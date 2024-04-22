@@ -6,40 +6,10 @@
 {{!-- PROFILE CONTAINERS --}}
 <div class="profile-container row">
 
-  {{!-- FAVORITES CONTAINER --}}
-  <div class=" col-6">
-    <h2 class="userBoxes">Favorites<button data-bs-toggle="modal" data-bs-target="#favorite" class="addBtn">+</button>
-    </h2>
-    <div class="favorites-box">
-      {{!-- RENDERS EACH FAVORITE --}}
-      {{#each favorite as |favorite|}}
-      <div class="favorite-movie">
-        <button id="{{id}}" class="remove removeFav">X</button>
-        <img src="{{poster}}" alt="Movie Poster" class="poster">
-        <h3>{{name}}</h3>
-      </div>
-      {{/each}}
-    </div>
-  </div>
-
-  {{!-- WATCHLIST CONTAINER --}}
-  <div class="col-6">
-    <h2 class="userBoxes">Watchlist<button data-bs-toggle="modal" data-bs-target="#watchlist" class="addBtn">+</button>
-    </h2>
-    <div class="watchlist-box">
-      {{#each watch_list as |watchlist|}}
-      <div class="watchlist-item">
-        <button id="{{id}}" class="remove removewl">X</button>
-        <img src="{{poster}}" alt="Movie Poster" class="poster">
-        <h3>{{name}}</h3>
-      </div>
-      {{/each}}
-    </div>
-  </div>
 
   {{!-- REVIEWS ACCORDIAN CONTAINER --}}
   <div class="col-6 reviewsContainer">
-    <h2 class="userBoxes">Reviews<button class="addBtn"><a href="/review">+</a></button></h2>
+    <h2 class="userBoxes">Blogs<button class="addBtn"><a href="/review">+</a></button></h2>
     <div id="accordion">
       {{!-- RENDERS EACH EXPANDABLE REVIEW --}}
       {{#each reviews as |review|}}
@@ -137,83 +107,6 @@
 <div class="header-icons">
   <a href="/profile" class="user-button"><i class="fas fa-user"></i></a>
   <a href="/" class="home-button"><i class="fas fa-home"></i></a>
-</div>
-
-{{!-- FAVORITE MODAL --}}
-<div class="modal fade" id="favorite" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="search-box">
-          <div class="search-field">
-            <input placeholder="Search For Movies" id="favoriteMovieSearch" class="input" type="text">
-            <div class="search-box-icon">
-              <button class="btn-icon-content" id="Favoritesearch">
-                <i class="search-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
-                    <path
-                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                      fill="#fff"></path>
-                  </svg>
-                </i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <button type="button" class="btn-close nukeAfterClose" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary closeReload" data-bs-dismiss="modal">Save</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-{{!-- WATCHLIST MODAL --}}
-<div class="modal fade" id="watchlist" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="search-box">
-          <div class="search-field">
-            <input placeholder="Search For Movies" id="watchlistMovieSearch" class="input" type="text">
-            <div class="search-box-icon">
-              <button class="btn-icon-content" id="watchlistSearch">
-                <i class="search-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
-                    <path
-                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                      fill="#fff"></path>
-                  </svg>
-                </i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <button type="button" class="btn-close nukeAfterClose" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body2">
-        <h6>Click a movie poster to add it to your watchlist</h6>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary closeReload2" data-bs-dismiss="modal">Save</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-{{!-- TOAST --}}
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
-  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <strong class="me-auto"></strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-  </div>
 </div>
 
 {{!-- JS SCRIPTS --}}
